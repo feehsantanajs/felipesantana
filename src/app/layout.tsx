@@ -1,3 +1,4 @@
+import { Header } from './components/Header'
 import './globals.css'
 
 export const metadata = {
@@ -12,7 +13,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head />
+      <body className='' >
+        <div className='grid grid-rows-layout max-h-full h-full'>
+          <header><Header /></header>
+          <main className='mx-auto max-w-[1280px]  w-full flex items-center'>{children}</main>
+          <footer className=''> Teste</footer>
+        </div>
+      </body>
     </html>
   )
 }

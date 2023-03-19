@@ -10,7 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-
+      fontFamily: {
+        'dancing':  ['Dancing Script',  'cursive']
+      },
       colors:{
         'dark-blue-900':'#000409',
         'dark-blue-800':'#001123',
@@ -19,11 +21,9 @@ module.exports = {
         'dark-blue-500':'#00376f',
       },
       gridTemplateRows: {
-        'layout': '4rem 1fr 4rem',
+        'layout': '5rem 1fr 5rem',
       },
-      gridTemplateColumns: {
-        'layout': '4rem 1fr 4rem',
-      },
+    
     },
   },
   plugins: [],

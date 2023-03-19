@@ -14,7 +14,7 @@ export function Header() {
 
   return (
     <nav>
-      <div  className='mx-auto flex items-center justify-between w-full max-w-[1280px] min-h-[5rem] p-4 '>
+      <div  className='mx-auto flex items-center justify-between w-full max-w-[1280px] min-h-[5rem] '>
         <div>
           <Image src="./assets/images/logo-fs-white.svg" width={30} height={30} alt={'Felipe Santana'} />
         </div>
