@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import {FiCommand} from 'react-icons/fi'
-
+import { motion } from "framer-motion";
 export function Header() {
   const menuTitle = [
     'About',
@@ -29,7 +29,11 @@ export function Header() {
           </ul>
 
         </div>
-        <div><FiCommand /></div>
+        <div> 
+          <motion.button whileHover={{ scale: 1.2 }}> 
+            <FiCommand className='w-6 h-6'/>
+          </motion.button>
+        </div>
       </div>
     </nav>
   )

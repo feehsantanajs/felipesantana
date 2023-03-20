@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 /* eslint-disable react/jsx-no-comment-textnodes */
 export default function Head(){
   return (

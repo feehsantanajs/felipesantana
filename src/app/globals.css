@@ -9,14 +9,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-body{
-  font-size: 1.6rem;
-  
+:root{
+  font-size:100%;
   font-family: 'Inter', sans-serif;
+}
+body{
   height: 100vh;
   width: 100vw;
- 
   background-color: #000409;
   color:white;
 }
