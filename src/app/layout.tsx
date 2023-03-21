@@ -1,5 +1,6 @@
-import { Footer } from './components/Footer'
-import { Header } from './components/Header'
+
+import { Footer } from '../components/Footer'
+import { Header } from '../components/Header'
 import './globals.css'
 
 export const metadata = {
@@ -13,15 +14,21 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+
     <html lang="en">
       <head />
-      <body  >
-        <div className='grid grid-rows-layout max-h-full h-full'>
-          <header><Header /></header>
-          <main className='mx-auto max-w-[1280px]  w-full flex items-center'>{children}</main>
-          <footer className='mx-auto max-w-[1280px] w-full'> <Footer /></footer>
-        </div>
+
+      <body >
+      
+          <div className='grid grid-rows-layout max-h-full h-full'>
+            <header><Header /></header>
+            <main className='mx-auto max-w-[1280px]  w-full flex '>{children}</main>
+            <footer className='mx-auto max-w-[1280px] w-full'> <Footer /></footer>
+          </div>
+     
       </body>
+
     </html>
+
   )
 }

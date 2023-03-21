@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function App() {
   return (
 
-    <div className='pl-40' >
+    <div className='w-full flex flex-col items-center justify-center' >
       <motion.h1 className='font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-purple-900 to-pink-500 '
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: -10 }}

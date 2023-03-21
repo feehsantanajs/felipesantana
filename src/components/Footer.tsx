@@ -3,19 +3,13 @@ import {AiFillHeart} from 'react-icons/ai'
 
 export function Footer() {
 
-  const menuFooter = [
-    'Linkedin',
-    'Github',
-    'Twitter',
-    'Instagram'
-  ]
-
   return (
     <div className="h-full flex items-center justify-between text-sm">
       <ul className="flex gap-8">
-        {menuFooter.map(res => {
-          return <li key={res} className=""><a href="#">{res}</a></li>
-        })}
+       <li><a href="">Linkedin</a></li>
+       <li><a href="">Github</a></li>
+       <li><a href="">Twitter</a></li>
+       <li><a href="">Instagram</a></li>
       </ul>
 
       <div className='flex items-center gap-1'>
