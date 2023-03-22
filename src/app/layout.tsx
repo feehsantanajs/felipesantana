@@ -1,4 +1,5 @@
-
+'use client'
+import { Modal } from '@/components/Modal'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import './globals.css'
@@ -24,6 +25,7 @@ export default function RootLayout({
             <header><Header /></header>
             <main className='mx-auto max-w-[1280px]  w-full flex '>{children}</main>
             <footer className='mx-auto max-w-[1280px] w-full'> <Footer /></footer>
+            <Modal />
           </div>
      
       </body>

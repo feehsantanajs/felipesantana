@@ -3,7 +3,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FiCommand } from 'react-icons/fi'
 import { motion } from "framer-motion";
+import { useState } from 'react';
+import useControlModal from '@/hook/useControlModal';
 export function Header() {
+  const setModal = useControlModal((state) => state.setValueModal)
+  
   const menuTitle = [
     {
       id: 1,
@@ -40,23 +44,20 @@ export function Header() {
         </div>
         <div className='max-w-[32rem] w-full  mx-auto'>
 
-          <ul className='flex justify-between'>
+          <div className='flex justify-between'>
             {menuTitle.map(res => {
               return (
                 <Link key={res.id} href={res.link} className='cursor-pointer text-slate-500  text-sm font-bold p-3 rounded-md transition duration-300 ease-in-out hover:text-white hover:bg-slate-900'>
-                  <li>
+                  <div>
                     {res.name.toUpperCase()} 
-                  </li>
+                  </div>
                 </Link>
               )})
             }
-
-
-          </ul>
-
+          </div>
         </div>
         <div>
-          <motion.button whileHover={{ scale: 1.2 }}>
+          <motion.button whileHover={{ scale: 1.2 }} onClick={() => setModal()}>
             <FiCommand className='w-6 h-6' />
           </motion.button>
         </div>

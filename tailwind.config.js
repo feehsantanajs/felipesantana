@@ -19,6 +19,7 @@ module.exports = {
         'dark-blue-700':'#001e3c',
         'dark-blue-600':'#002a56',
         'dark-blue-500':'#00376f',
+        'dark-black-1': 'rgba(0,0,0, 0.6)'
       },
       gridTemplateRows: {
         'layout': '5rem 1fr 5rem',

@@ -3,11 +3,14 @@
 
 import {FaArrowRight} from 'react-icons/fa'
 import { motion } from "framer-motion";
+import { Modal } from '@/components/Modal';
+
 
 export default function App() {
   return (
 
     <div className='w-full flex flex-col items-center justify-center' >
+      
       <motion.h1 className='font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-purple-900 to-pink-500 '
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: -10 }}
@@ -32,7 +35,7 @@ export default function App() {
         transition={{ ease: 'easeInOut', duration: 3 }}
         exit={{ opacity: 0 }}
       >
-        Web Developer | Focus improving my skills
+        Software Engineer | Focus everyday improving my skills
       </motion.p>
       <motion.button className=' flex items-center mt-6 gap-1 text-sm p-2 rounded  transition duration-300 ease-in-out hover:bg-slate-900'
         initial={{ opacity: 0 }}

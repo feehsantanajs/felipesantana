@@ -41,21 +41,6 @@ export default async function techs(request: NextApiRequest, response:NextApiRes
       url:'react-logo.png',
       description: `React is a framework used to build single-page applications.`
     },
-    
-    {
-      id: uniqid('tech-'),
-      name: 'Vue.JS',
-      type: 'framework',
-      url:'html-logo.png',
-      description: `Vue.js is a popular open-source JavaScript framework for building user interfaces and single-page applications. `
-    },
-    {
-      id: uniqid('tech-'),
-      name: 'VTEX',
-      type: 'framework',
-      url:'html-logo.png',
-      description: `VTEX is a cloud-based e-commerce platform that provides a suite of tools and services to help businesses build and manage their online stores.`
-    },
     {
       id: uniqid('tech-'),
       name: 'Node.JS',
@@ -67,14 +52,38 @@ export default async function techs(request: NextApiRequest, response:NextApiRes
       id: uniqid('tech-'),
       name: 'PHP',
       type: 'backend',
-      url:'html-logo.png',
+      url:'php-logo.png',
       description: `PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.`
     },
     {
       id: uniqid('tech-'),
+      name: 'TailwindCSS',
+      type: 'framework',
+      url:'tailwind-logo.png',
+      description: `Tailwind CSS is a utility-first CSS framework that provides a set of pre-defined CSS classes to quickly and efficiently style HTML elements.`
+    },
+    
+    {
+      id: uniqid('tech-'),
+      name: 'Vue.JS',
+      type: 'framework',
+      url:'vue-logo.svg',
+      description: `Vue.js is a popular open-source JavaScript framework for building user interfaces and single-page applications. `
+    },
+    
+    {
+      id: uniqid('tech-'),
+      name: 'VTEX',
+      type: 'framework',
+      url:'vtex-logo.svg',
+      description: `VTEX is a cloud-based e-commerce platform that provides a suite of tools and services to help businesses build and manage their online stores.`
+    },
+   
+    {
+      id: uniqid('tech-'),
       name: 'SAP',
       type: 'ERP',
-      url:'html-logo.png',
+      url:'sap-logo.png',
       description: `SAP (Systems, Applications, and Products) is a multinational software corporation that provides enterprise software to manage business operations and customer relations.`
     },
     {
