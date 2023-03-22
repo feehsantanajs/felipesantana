@@ -43,9 +43,9 @@ export function Header() {
           <ul className='flex justify-between'>
             {menuTitle.map(res => {
               return (
-                <Link key={res.id} href={res.link} className='cursor-pointer text-slate-500  text-xs font-bold p-3 rounded-md transition duration-300 ease-in-out hover:text-white hover:bg-slate-900'>
+                <Link key={res.id} href={res.link} className='cursor-pointer text-slate-500  text-sm font-bold p-3 rounded-md transition duration-300 ease-in-out hover:text-white hover:bg-slate-900'>
                   <li>
-                    {res.name} 
+                    {res.name.toUpperCase()} 
                   </li>
                 </Link>
               )})
