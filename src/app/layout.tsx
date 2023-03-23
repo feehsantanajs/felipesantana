@@ -23,7 +23,9 @@ export default function RootLayout({
       
           <div className='grid grid-rows-layout max-h-full h-full'>
             <header><Header /></header>
-            <main className='mx-auto max-w-[1280px]  w-full flex '>{children}</main>
+            <main className='mx-auto max-w-[1280px] w-full flex p-10'>
+              {children}
+            </main>
             <footer className='mx-auto max-w-[1280px] w-full'> <Footer /></footer>
             <Modal />
           </div>

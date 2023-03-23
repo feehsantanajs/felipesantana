@@ -25,7 +25,7 @@ export function Modal(){
                 <li className="flex items-center p-2 gap-2 text-lg transition ease-in-out duration-300 text-gray-400 hover:bg-white/20 hover:text-white"><AiOutlineMail /> Send Email</li>
               </Link>
               <li className="p-2">Go to</li>
-              <Link href="/" className="">
+              <Link href="/about" className="">
                 <li className="flex items-center p-2 gap-2 text-lg transition ease-in-out duration-300 text-gray-400 hover:bg-white/20 hover:text-white"><AiOutlineUser /> About</li>
               </Link>
               <Link href="/projects" className="">
