@@ -1,8 +1,7 @@
 'use client'
 import { Modal } from '@/components/Modal'
 import { Footer } from '../components/Footer'
-import { Header } from '../components/Header'
-
+import Header from '../components/Header'
 import { useEffect } from 'react'
 import useControlModal from '@/hook/useControlModal'
 
@@ -23,7 +22,7 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
       setModal()
      }
     })
-   })
+   },[])
  
   return (
 
