@@ -3,8 +3,6 @@
 
 import {FaArrowRight} from 'react-icons/fa'
 import { motion } from "framer-motion";
-import { Modal } from '@/components/Modal';
-
 
 export default function App() {
   return (

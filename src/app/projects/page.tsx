@@ -5,7 +5,7 @@ export default function Projects(){
   return(
 
       <div className="">
-        tete
+        Doing ...
       </div>
     
   )
