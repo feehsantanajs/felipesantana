@@ -3,6 +3,7 @@
 
 import {FaArrowRight} from 'react-icons/fa'
 import { motion } from "framer-motion";
+import useControlModal from '@/hook/useControlModal';
 
 export const metadata = {
   title: 'Inicio',
@@ -10,7 +11,7 @@ export const metadata = {
 
 export default function App() {
 
-
+  const setModal = useControlModal((state) => state.setValueModal)
   return (
 
     <div className='w-full flex flex-col items-center justify-center' >
@@ -46,8 +47,9 @@ export default function App() {
         animate={{ opacity: 1 }}
         transition={{ ease: 'easeInOut', duration: 3 }}
         exit={{ opacity: 0 }}
+        onClick={()=>setModal()}
       >
-        Press <span className='bg-slate-500 rounded-lg px-2'>control</span> <span className='bg-slate-500 rounded px-2'>K</span> to begin 
+        Press <span className='bg-slate-500 rounded-lg px-2'>control</span> <span className='bg-slate-500 rounded px-2'>M</span> to begin 
         <FaArrowRight />
       </motion.button>
     </div>
