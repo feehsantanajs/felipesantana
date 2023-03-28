@@ -1,5 +1,6 @@
 'use client'
 import { api } from '@/services/api';
+import { AxiosHeaders } from 'axios';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
@@ -21,6 +22,7 @@ export default function Techs() {
     try{
       setLoading(!loading)
       api('/techs').then(res =>{
+       
         console.log(res.data)
         setDatas(res.data)
       })

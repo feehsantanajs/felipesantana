@@ -9,8 +9,8 @@ export default function Header() {
   return (
     <nav>
       <div className='mx-auto flex items-center justify-between w-full max-w-[1280px] min-h-[5rem] '>
-        <div>
-          <Link href="/" ><Image src="./assets/images/logo-fs-white.svg" width={30} height={30} alt={'Felipe Santana'} /></Link>
+        <div className='w-8 h-8'>
+          <Link href="/" ><Image src="./assets/images/logo-fs-white.svg" width={100} height={100} sizes="10" alt={'Felipe Santana'} /></Link>
         </div>
         <div className='max-w-[32rem] w-full  mx-auto'>
 
