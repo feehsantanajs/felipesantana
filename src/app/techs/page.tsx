@@ -45,7 +45,7 @@ export default function Techs() {
           {
             datas?.map(res => {
               return (
-                <div key={res.id} className='max-w-sm w-[100%] h-60  bg-gray-900 rounded p-5 flex flex-col justify-between transition ease-in-out duration-300 hover:brightness-75'>
+                <div key={res.id} className='max-w-sm w-[100%] h-64  bg-gray-900 rounded p-5 flex flex-col justify-between transition ease-in-out duration-300 hover:brightness-75'>
                   <Image src={`/assets/images/logos/${res.url}`} alt={res.name} width={50} height={50} />
                   <h1 className='text-lg'>{res.name}</h1>
                   <p>{res.description}</p>

@@ -5,10 +5,6 @@ import {FaArrowRight} from 'react-icons/fa'
 import { motion } from "framer-motion";
 import useControlModal from '@/hook/useControlModal';
 
-export const metadata = {
-  title: 'Inicio',
-}
-
 export default function App() {
 
   const setModal = useControlModal((state) => state.setValueModal)

@@ -1,13 +1,16 @@
 import {NextApiRequest, NextApiResponse} from 'next'
 import uniqid from 'uniqid';
+import { format,intervalToDuration } from 'date-fns'
 
 export default async function experiences(request: NextApiRequest, response:NextApiResponse) {
+
+  request.headers['access-control-allow-origin']
   const datas = [
     {
       id: uniqid('ex-'),
       role: 'Frontend Developer',
       company: 'Codeby',
-      date: Date(),
+      date: `Jul 2022 - Jan 2023 | 7 mos`,
       description:``,
       skills:[
         'HTML',
@@ -26,7 +29,7 @@ export default async function experiences(request: NextApiRequest, response:Next
       id: uniqid('ex-'),
       role: 'Frontend Developer Jr.',
       company: 'Octoshop',
-      date: Date(),
+      date: `Apr 2022 - Jul 2022 | 4 mos`,
       description:`
       - Develop new front-end applications for e-ccomerce Octoshop and bug fixes. <br />
       - Analysis system on the Seller's account balance (Front-end). <br />
@@ -46,7 +49,7 @@ export default async function experiences(request: NextApiRequest, response:Next
       id: uniqid('ex-'),
       role: 'Programming Intern',
       company: 'ServiceOne',
-      date: Date(),
+      date: `Jul 2013 - Dec 2013 | 6 mos`,
       description:`
       - Development of Add-ons to SAP Business One using C# <br />
       - Migration of Add-ons written in VBA to C# <br />
@@ -62,7 +65,7 @@ export default async function experiences(request: NextApiRequest, response:Next
       id: uniqid('ex-'),
       role: 'Programming Intern',
       company: 'K2Media',
-      date: Date(),
+      date: `Feb 2013 - Jun 2013 | 5 mos`,
       description:' Creation and update of websites',
       skills:[
         'HTML',

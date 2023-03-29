@@ -1,6 +1,5 @@
 import {NextApiRequest, NextApiResponse} from 'next'
 import uniqid from 'uniqid';
-
 export default async function techs(request: NextApiRequest, response:NextApiResponse) {
   const datas = [
     {
@@ -62,12 +61,18 @@ export default async function techs(request: NextApiRequest, response:NextApiRes
       url:'tailwind-logo.png',
       description: `Tailwind CSS is a utility-first CSS framework that provides a set of pre-defined CSS classes to quickly and efficiently style HTML elements.`
     },
-    
+    {
+      id: uniqid('tech-'),
+      name: 'GraphQL',
+      type: 'framework',
+      url:'graphql-logo.png',
+      description: `It is a query language and runtime for APIs`
+    },
     {
       id: uniqid('tech-'),
       name: 'Vue.JS',
       type: 'framework',
-      url:'vue-logo.svg',
+      url:'vue-logo.png',
       description: `Vue.js is a popular open-source JavaScript framework for building user interfaces and single-page applications. `
     },
     
@@ -90,28 +95,28 @@ export default async function techs(request: NextApiRequest, response:NextApiRes
       id: uniqid('tech-'),
       name: 'MySQL',
       type: 'database',
-      url:'html-logo.png',
+      url:'mysql-logo.png',
       description: `MySQL is an open-source relational database management system (RDBMS) that allows for the creation, management, and manipulation of databases.`
     },
     {
       id: uniqid('tech-'),
       name: 'SQLServer',
       type: 'database',
-      url:'html-logo.png',
+      url:'sqlserver-logo.png',
       description: `SQL Server is a relational database management system (RDBMS) developed by Microsoft. It is used to store and retrieve data as requested by other software applications. `
     },
     {
       id: uniqid('tech-'),
       name: 'MongoDB',
       type: 'database',
-      url:'html-logo.png',
+      url:'mongobd-logo.png',
       description: `MongoDB is a popular open-source NoSQL document-oriented database that uses a flexible JSON-like data model. `
     },
     {
       id: uniqid('tech-'),
       name: 'PostgreSQL',
       type: 'erp',
-      url:'html-logo.png',
+      url:'postgresql-logo.png',
       description: `PostgreSQL is an advanced open-source relational database management system (RDBMS) that uses and extends the SQL language. It is known for its robustness, extensibility, and compliance with industry standards.`
     },
   ]
