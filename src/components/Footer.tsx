@@ -1,15 +1,15 @@
 import {SiNextdotjs, SiReact, SiTailwindcss, SiVercel} from 'react-icons/si'
 import {AiFillHeart} from 'react-icons/ai'
+import Link from 'next/link'
 
 export function Footer() {
 
   return (
     <div className="h-full flex items-center justify-between text-sm">
       <ul className="flex gap-8">
-       <li><a href="">Linkedin</a></li>
-       <li><a href="">Github</a></li>
-       <li><a href="">Twitter</a></li>
-       <li><a href="">Instagram</a></li>
+        <Link href="https://www.linkedin.com/in/feelipesantana/" className='transition ease-in-out duration-300 hover:text-blue-600'> <li>Linkedin</li></Link>
+        <Link href="https://github.com/felipesantanajs/" className='transition ease-in-out duration-300 hover:text-gray-600'><li>Github</li></Link>
+        <Link href="https://twitter.com/felipesantanajs/" className='transition ease-in-out duration-300 hover:text-blue-300'><li>Twitter</li></Link>
       </ul>
 
       <div className='flex items-center gap-1'>
