@@ -36,7 +36,7 @@ export default function App() {
         transition={{ ease: 'easeInOut', duration: 3 }}
         exit={{ opacity: 0 }}
       >
-        Software Engineer |<br /> Focus everyday improving my skills
+        Software Engineer | Focus everyday improving my skills
       </motion.p>
       <motion.button className='hidden items-center mt-6 gap-1 text-sm p-2 rounded  transition duration-300 ease-in-out hover:bg-slate-900 lg:flex'
         initial={{ opacity: 0 }}
