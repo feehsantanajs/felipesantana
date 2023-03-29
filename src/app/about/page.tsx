@@ -4,11 +4,15 @@ import Image from 'next/image'
 
 export default function About(){
   return(
-      <div>
+      <div className='w-full '>
         <h1 className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-red-500 to-yellow-500 ">About me</h1>
-          <div className='mt-20 w-full mx-auto flex gap-10'>
-              <Image src="https://github.com/felipesantanajs.png" alt='My image' width={350} height={350} className='rounded-lg'/>
-              <div className='text-gray-400  text-lg flex flex-col gap-4'>
+          <div className='mt-20 w-full mx-auto gap-10 lg:flex'>
+
+            <div className='w-full h-full'>
+              <Image src="https://github.com/felipesantanajs.png" alt='My image' width="300"  height="300" className='rounded-lg'/>
+            </div>
+              
+              <div className='text-gray-400  text-lg flex flex-col gap-4 mt-10 lg:mt-0'>
                 <p>Hello, My name is <span className='text-white'>Felipe Santana</span> from São Paulo, Brazil. <br /> </p>
                 <p>
                   I'm a <span className="text-white">Full-stack engineer</span> that loves Frontend. 
