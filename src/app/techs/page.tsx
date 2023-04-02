@@ -38,10 +38,10 @@ export default function Techs() {
     handleGetDatasStack()
   },[])
   return (
-    <div>
+    <div className='w-full'>
       <h1 className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-green-500 to-yellow-500 "> My Stacks</h1>
-      <div className='mt-20 w-full mx-auto flex'>
-        <div className='grid grid-cols-1 lg:grid-cols-3 mx-auto gap-6 '>
+      
+        <div className='grid grid-cols-1 gap-10 mt-20 lg:grid-cols-3'>
           {
             datas?.map(res => {
               return (
@@ -53,7 +53,7 @@ export default function Techs() {
               )
             })}
         </div>
-      </div>
+    
     </div>
   )
 }

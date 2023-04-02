@@ -26,7 +26,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
       <body>
         <div className='grid grid-rows-layout max-h-full h-full'>
           <header><Header /></header>
-          <main className='mx-auto max-w-[1280px] w-full flex px-10 lg:p-0'>
+          <main className='mx-auto max-w-[1280px] w-full flex py-20 max-lg:px-10'>
             {children}
           </main>
           <footer className='mx-auto max-w-[1280px] w-full'> <Footer /></footer>
