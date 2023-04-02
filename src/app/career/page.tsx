@@ -1,7 +1,4 @@
-'use client'
 import { api } from "@/services/api";
-import Image from "next/image";
-import { useEffect, useState } from "react";
 
 type DatasCareerProps = [{
   id: string,
@@ -12,34 +9,10 @@ type DatasCareerProps = [{
   skills:[]
 }]
 
-export default function Career(){
-  
-  const [datas, setDatas] = useState<DatasCareerProps>();
-  const [loading, setLoading] = useState(false);
+export default async function Career(){
 
-  async function handleGetDatasStack(){
-    try{
-      setLoading(!loading)
-      api('/experiences').then(res =>{
-        console.log(res.data)
-        setDatas(res.data)
-      })
-
-    } catch(err){
-      console.log(err)
-    }finally{
-      setLoading(!loading)
-    }
-  }
-
-  useEffect(() =>{
-    handleGetDatasStack()
-  },[])
-  
-  function splitString(stringToSplit:string, separator:string) {
-    var arrayOfStrings = stringToSplit.split(separator);
-    return arrayOfStrings
-  }
+  const response = await api('/experiences')
+  const datas:DatasCareerProps = await response.data
 
   return(
     <div>
