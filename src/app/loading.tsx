@@ -1,5 +1,11 @@
+'use client'
+import ReactLoading from 'react-loading';
 export default function Loading(){
+
   return (
-    <h1>Carregando</h1>
+    <div className="w-full h-full flex items-center justify-center ">
+        <ReactLoading type="spinningBubbles" color="#fff" height={'10%'} width={'10%'} />
+    </div>
+   
   )
 }
