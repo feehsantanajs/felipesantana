@@ -13,7 +13,7 @@ export default async function Career(){
 
   const response = await api.get('/experiences')
   const datas:DatasCareerProps = await response.data
-
+  
   return(
     <div>
       <h1 className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-pink-600 to-purple-400 "> My Career</h1>
