@@ -13,7 +13,7 @@ type stackProps = [
 export default async function Techs() {
 
   const response = await api.get('/techs')
-  const datas:stackProps = await response.data
+  const datas:stackProps = response.data
 
   return (
     <div className='w-full'>
