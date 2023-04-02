@@ -11,7 +11,7 @@ type DatasCareerProps = [{
 
 export default async function Career(){
 
-  const response = await api('/experiences')
+  const response = await api.get('/experiences')
   const datas:DatasCareerProps = await response.data
 
   return(
