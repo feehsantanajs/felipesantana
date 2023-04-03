@@ -1,8 +1,5 @@
 import axios from 'axios'
 
 export const api = axios.create({
-  baseURL: process.env.API_ROUTE_LOCAL,
-  headers: {
-    key: "Access-Control-Allow-Origin", value: "*" 
-  }
+  baseURL: "/api/services/"
 })
