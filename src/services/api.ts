@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const api = axios.create({
-  baseURL: "https://felipesantana-7i9adokph-feelipesantana.vercel.app/api/services/",
+  baseURL: process.env.API_ROUTE_LOCAL,
   headers: {
     key: "Access-Control-Allow-Origin", value: "*" 
   }
