@@ -1,10 +1,7 @@
 import {NextApiRequest, NextApiResponse} from 'next'
 import uniqid from 'uniqid';
-import { format,intervalToDuration } from 'date-fns'
 
 export default async function experiences(request: NextApiRequest, response:NextApiResponse) {
-
-  request.headers['access-control-allow-origin']
   const datas = [
     {
       id: uniqid('ex-'),

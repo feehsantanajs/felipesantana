@@ -1,4 +1,5 @@
 import { api } from "@/services/api";
+import axios from "axios";
 
 type DatasCareerProps = [{
   id: string,
@@ -11,7 +12,7 @@ type DatasCareerProps = [{
 
 export default async function Career(){
 
-  const response = await api.get('/experiences')
+  const response = await axios.get('https://felipesantana.vercel.app/api/experiences')
   const datas:DatasCareerProps = await response.data
   
   return(

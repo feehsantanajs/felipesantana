@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { api } from '@/services/api';
+import axios from 'axios';
 type stackProps = [
   {
     id: string;
@@ -12,10 +13,10 @@ type stackProps = [
 
 export default async function Techs() {
 
-  const response = await api.get('/techs')
-  const datas:stackProps = response.data
+  const response = await axios.get('https://felipesantana.vercel.app/api/techs')
+  const datas:stackProps = await response.data
   console.log(response);
-  
+
   return (
     <div className='w-full'>
       <h1 className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-green-500 to-yellow-500 "> My Stacks</h1>
