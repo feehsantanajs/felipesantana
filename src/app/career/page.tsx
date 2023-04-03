@@ -12,7 +12,7 @@ type DatasCareerProps = [{
 
 export default async function Career(){
 
-  const response = await axios.get('https://felipesantana.vercel.app/api/experiences')
+  const response = await axios.get('http://127.0.0.1:3000/api/experiences')
   const datas:DatasCareerProps = await response.data
   
   return(

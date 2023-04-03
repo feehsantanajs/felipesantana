@@ -13,9 +13,8 @@ type stackProps = [
 
 export default async function Techs() {
 
-  const response = await axios.get('https://felipesantana.vercel.app/api/techs')
-  const datas:stackProps = await response.data
-  console.log(response);
+  const response = await axios.get('http://127.0.0.1:3000/api/techs');
+  const datas:stackProps = await response.data;
 
   return (
     <div className='w-full'>

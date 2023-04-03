@@ -1,6 +1,8 @@
 import {NextApiRequest, NextApiResponse} from 'next'
+
+import {NextResponse} from 'next/server'
 import uniqid from 'uniqid';
-export default async function techs(request: NextApiRequest, response:NextApiResponse) {
+export async function GET(request:NextApiRequest,response:NextApiResponse) {
   const datas = [
     {
       id: uniqid('tech-'),
@@ -121,5 +123,5 @@ export default async function techs(request: NextApiRequest, response:NextApiRes
     },
   ]
 
-  return response.status(200).json(datas)
+  return NextResponse.json(datas)
 }
