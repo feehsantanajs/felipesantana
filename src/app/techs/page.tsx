@@ -13,7 +13,7 @@ type stackProps = [
 
 export default async function Techs() {
 
-  const response = await axios.get('/api/techs');
+  const response = await axios.get('https://felipesantana.vercel.app/api/techs');
   const datas:stackProps = await response.data;
 
   return (
