@@ -1,5 +1,5 @@
 import axios from 'axios'
 
 export const api = axios.create({
-  baseURL: process.env.API_ROUTE_LOCAL,
+  baseURL: "https://felipesantana.vercel.app/api/",
 })
