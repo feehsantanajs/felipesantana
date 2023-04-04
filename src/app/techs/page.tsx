@@ -15,7 +15,9 @@ export default async function Techs() {
 
   const response = await api.get('/techs');
   const datas:stackProps = await response.data;
-
+  
+  console.log(datas);
+  
   return (
     <div className='w-full'>
       <h1 className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-green-500 to-yellow-500 "> My Stacks</h1>

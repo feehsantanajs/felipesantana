@@ -2,7 +2,7 @@ import {NextApiRequest, NextApiResponse} from 'next'
 
 import {NextResponse} from 'next/server'
 import uniqid from 'uniqid';
-export async function GET(request:NextApiRequest,response:NextApiResponse) {
+export async function GET(request:Request) {
   const datas = [
     {
       id: uniqid('tech-'),
