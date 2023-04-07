@@ -3,7 +3,7 @@ import {NextResponse} from 'next/server'
 import uniqid from 'uniqid';
 
 export async function GET(request: Request) {
-  const datas = [
+  return NextResponse.json([
     {
       id: uniqid('ex-'),
       role: 'Frontend Developer',
@@ -73,7 +73,5 @@ export async function GET(request: Request) {
         'MYSQL'
       ]
     },
-  ]
-
-  return NextResponse.json(datas)
+  ])
 }
