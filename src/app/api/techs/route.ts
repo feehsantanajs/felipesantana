@@ -1,25 +1,22 @@
 import {NextApiRequest, NextApiResponse} from 'next'
 
-import {NextResponse} from 'next/server'
+import {NextResponse,NextRequest} from 'next/server'
 import uniqid from 'uniqid';
-export async function GET(request:Request) {
-  const datas = [
+export async function GET() {
+  return NextResponse.json([
     {
       id: uniqid('tech-'),
       name: 'HTML',
       type: 'frontend',
       url:'html-logo.png',
-      description: 
-      `HTML is the standard markup language for creating Web pages.`
-      
+      description: `HTML is the standard markup language for creating Web pages.`
     },
     {
       id: uniqid('tech-'),
       name: 'CSS',
       type: 'frontend',
       url:'css-logo.png',
-      description: 
-      `CSS is the language we use to style an HTML document.`
+      description: `CSS is the language we use to style an HTML document.`
     },
     {
       id: uniqid('tech-'),
@@ -121,7 +118,5 @@ export async function GET(request:Request) {
       url:'postgresql-logo.png',
       description: `PostgreSQL is an advanced open-source relational database management system (RDBMS) that uses and extends the SQL language. It is known for its robustness, extensibility, and compliance with industry standards.`
     },
-  ]
-
-  return NextResponse.json(datas)
+  ])
 }

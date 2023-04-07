@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import { api } from '@/services/api';
-import axios from 'axios';
+import Image from 'next/image';
+
 type stackProps = [
   {
     id: string;
@@ -14,11 +14,11 @@ type stackProps = [
 export default async function Techs() {
 
   const response = await api.get('/techs');
-  const datas:stackProps = await response.data;
+  const datas:stackProps = response.data
   
-  console.log(datas);
-  
+
   return (
+     
     <div className='w-full'>
       <h1 className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-green-500 to-yellow-500 "> My Stacks</h1>
       <div className='grid grid-cols-1 gap-10 mt-20 lg:grid-cols-3'>

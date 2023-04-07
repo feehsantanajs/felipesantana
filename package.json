@@ -17,6 +17,7 @@
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "framer-motion": "^10.6.0",
+    "miragejs": "^0.1.47",
     "next": "13.2.4",
     "next-router-mock": "^0.9.2",
     "react": "18.2.0",

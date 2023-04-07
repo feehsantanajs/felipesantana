@@ -11,12 +11,12 @@ type DatasCareerProps = [{
 }]
 
 export default async function Career(){
-  const response = await api.get('/experiences');
-  const datas:DatasCareerProps = await response.data
-  
+  // const response = (await api.get('/experiences')).data;
+  // // const datas:DatasCareerProps = await response.data
+  // console.log(JSON.parse(response))
   return(
     <div>
-      <h1 className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-pink-600 to-purple-400 "> My Career</h1>
+      {/* <h1 className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-pink-600 to-purple-400 "> My Career</h1>
       <div className='mt-20 w-full mx-auto flex-col'>
         {datas.map(res => {
           return (
@@ -29,7 +29,7 @@ export default async function Career(){
           )
           })
         }
-      </div>
+      </div> */}
     </div>
   )
 }
