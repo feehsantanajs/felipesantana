@@ -14,7 +14,7 @@ type stackProps = [
 export default async function Techs() {
 
   const response = await api.get('/techs');
-  const datas:stackProps = response.data
+  const datas = await response.data
   
 
   return (

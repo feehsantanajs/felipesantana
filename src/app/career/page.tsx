@@ -1,5 +1,5 @@
 import { api } from "@/services/api";
-import axios from "axios";
+
 
 type DatasCareerProps = [{
   id: string,
@@ -12,7 +12,7 @@ type DatasCareerProps = [{
 
 export default async function Career(){
   const response = await api.get('/experiences');
-  const datas:DatasCareerProps = response.data
+  const datas = await response.data
   return(
     <div>
       <h1 className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-pink-600 to-purple-400 "> My Career</h1>
