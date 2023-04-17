@@ -17,7 +17,7 @@ export default async function Career(){
     <div>
       <h1 className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-pink-600 to-purple-400 "> My Career</h1>
       <div className='mt-20 w-full mx-auto flex-col'>
-        {datas.map(res => {
+        {datas.map((res:any) => {
           return (
             <div key={res.id} className=" flex-col mt-4">
               <h1 className="text-lg font-bold">{res.role}</h1>
