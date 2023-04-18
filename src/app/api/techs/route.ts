@@ -1,8 +1,7 @@
-import {NextApiRequest, NextApiResponse} from 'next'
-
 import {NextResponse,NextRequest} from 'next/server'
 import uniqid from 'uniqid';
-export async function GET() {
+
+export async function GET(request: Request) {
   return NextResponse.json([
     {
       id: uniqid('tech-'),
