@@ -11,8 +11,11 @@ type DatasCareerProps = [{
 }]
 
 export default async function Career(){
-  const response = await api.get('/experiences');
-  const datas = await response.data
+
+  //http://127.0.0.1:3000/api/experiences
+  const response = await fetch("/api/experiences");
+  const datas = await response.json()
+
   return(
     <div>
       <h1 className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-pink-600 to-purple-400 "> My Career</h1>

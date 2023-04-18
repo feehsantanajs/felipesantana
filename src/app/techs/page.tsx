@@ -13,8 +13,9 @@ type stackProps = [
 
 export default async function Techs() {
 
-  const response = await api.get('/techs');
-  const datas = await response.data
+  //http://127.0.0.1:3000/api/techs
+  const response = await fetch("/api/techs");
+  const datas = await response.json();
   
 
   return (
@@ -31,7 +32,8 @@ export default async function Techs() {
                 <p>{res.description}</p>
               </div>
             )
-          })}
+          })
+        }
       </div>
     </div>
   )
