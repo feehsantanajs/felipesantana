@@ -1,8 +1,6 @@
 'use client'
-import {useState,useEffect} from 'react'
 import React from 'react';
 import Image from 'next/image';
-import { api } from '@/services/api';
 import { v4 as uuidv4 } from 'uuid';
 type stackProps = [
   {
