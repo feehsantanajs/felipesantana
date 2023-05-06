@@ -39,7 +39,7 @@ export default function Header() {
                 PROJECTS
               </li>
             </Link>
-            <Link href="/techs"> 
+            <Link href="/mytechs"> 
               <li className='cursor-pointer text-slate-500  text-sm font-bold p-3 rounded-md transition duration-300 ease-in-out hover:text-white hover:bg-slate-900'>
                 TECHS
               </li>

@@ -35,7 +35,7 @@ export function Modal(){
                 <li className="flex items-center p-2 gap-2 text-lg transition ease-in-out duration-300 text-gray-400 hover:bg-white/20 hover:text-white"><TiWeatherSnow /> Techs</li>
               </Link>
           
-              <Link href="https://github.com/felipesantanajs" target="_blank" >
+              <Link href="https://github.com/feelipesantana/" target="_blank" >
                 <li className="flex items-center p-2 gap-2 text-lg transition ease-in-out duration-300 text-gray-400 hover:bg-black hover:text-white"><AiFillGithub /> Github</li>
               </Link>
               <Link href="https://www.linkedin.com/in/feelipesantana/" target="_blank">
