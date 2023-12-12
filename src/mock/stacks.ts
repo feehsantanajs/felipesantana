@@ -1,6 +1,12 @@
 import { randomUUID } from "crypto";
-
-export const stacksData = [
+interface stackProps{
+  id: string;
+  name: string;
+  type: string;
+  url: string;
+  description: string;
+}
+export const stacksData:stackProps[] = [
   {
     id: randomUUID(),
     name: "HTML",

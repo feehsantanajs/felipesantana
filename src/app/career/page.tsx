@@ -1,4 +1,6 @@
+"use client";
 import { datas } from "@/api/experiences";
+import { Chrono } from "react-chrono";
 
 export default function Carrer() {
   return (
@@ -33,6 +35,8 @@ export default function Carrer() {
           })}
         </div>
       </div>
+
+      {/* <Chrono items={datas} mode="VERTICAL" /> */}
     </div>
   );
 }

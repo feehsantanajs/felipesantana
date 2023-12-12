@@ -1,4 +1,3 @@
-import { Techs } from "@/components/Techs";
 import { stacksData } from "@/mock/stacks";
 import Image from "next/image";
 export default function MyTechs() {
@@ -9,7 +8,7 @@ export default function MyTechs() {
       </h1>
       <div>
         <div className="grid grid-cols-1 gap-10 mt-20 lg:grid-cols-3">
-          {stacksData.map((res: any) => {
+          {stacksData.map((res) => {
             return (
               <div
                 key={res.id}
