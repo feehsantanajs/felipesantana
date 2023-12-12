@@ -1,4 +1,4 @@
-import { randomUUID } from "crypto";
+import { v4 as uuidv4 } from "uuid";
 
 interface DatasCareerProps {
   id: string;
@@ -10,7 +10,7 @@ interface DatasCareerProps {
 }
 export const datas:DatasCareerProps[] = [
   {
-    id: randomUUID(),
+    id: uuidv4(),
     role: "Frontend Engineer Mid-Level",
     company: "Spott",
     date: `Feb 2023 - Nov 2023 | 9 mos`,
@@ -35,7 +35,7 @@ export const datas:DatasCareerProps[] = [
     ],
   },
   {
-    id: randomUUID(),
+    id: uuidv4(),
     role: "Frontend Engineer",
     company: "Codeby",
     date: `Jul 2022 - Feb 2023 | 8 mos`,
@@ -61,7 +61,7 @@ export const datas:DatasCareerProps[] = [
     ],
   },
   {
-    id: randomUUID(),
+    id: uuidv4(),
     role: "Frontend Engineer Jr",
     company: "Octoshop",
     date: `Apr 2022 - Jul 2022 | 4 mos`,
@@ -74,7 +74,7 @@ export const datas:DatasCareerProps[] = [
     skills: ["HTML", "CSS", "Javascript", "PHP", "Magento", "Git Flow"],
   },
   {
-    id: randomUUID(),
+    id: uuidv4(),
     role: "Full-Stack Engineer",
     company: "Habit'Art",
     date: `Mai 2021 - Jan 2022 | 9 mos`,
@@ -84,7 +84,7 @@ export const datas:DatasCareerProps[] = [
     skills: ["HTML", "CSS", "Javascript", "PHP", "Magento", "Git Flow"],
   },
   {
-    id: randomUUID(),
+    id: uuidv4(),
     role: "Programming Intern",
     company: "ServiceOne",
     date: `Jul 2013 - Dec 2013 | 6 mos`,
@@ -95,7 +95,7 @@ export const datas:DatasCareerProps[] = [
     skills: ["C#", "SAP", "SQLServer", "Crystal Reports"],
   },
   {
-    id: randomUUID(),
+    id: uuidv4(),
     role: "Programming Intern",
     company: "K2Media",
     date: `Feb 2013 - Jun 2013 | 5 mos`,
