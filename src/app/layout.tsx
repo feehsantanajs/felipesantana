@@ -25,22 +25,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body>
-        <div className="grid grid-rows-layout max-h-full h-full">
-          <header>
-            <Header />
-          </header>
+      <body className="bg-slate-900">
+        <div className=" max-w-7xl mx-auto">
+          <Header />
           <main
-            className={`mx-auto w-full flex py-20 max-lg:px-10 ${
+            className={`mx-auto w-full flex justify-between py-20 max-lg:px-10 max-w- ${
               pathname !== "/" && "bg-gray-900"
             }`}
           >
-            <div className="max-w-[1280px] mx-auto">{children}</div>
+            {children}
           </main>
-          <footer className="mx-auto max-w-[1280px] w-full">
-            {" "}
-            <Footer />
-          </footer>
+          <Footer />
           <Modal />
         </div>
       </body>
