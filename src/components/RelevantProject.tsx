@@ -6,21 +6,16 @@ import Tilt from "react-parallax-tilt";
 export function RelevantProject() {
   return (
     <div className="flex flex-col gap-20">
-      <div className="flex items-start justify-between ">
-        <div className="flex gap-8 max-w-4xl w-full">
+      <div className="flex items-start justify-between flex-col lg:flex-row">
+        <div className="flex gap-8 max-w-4xl w-full  flex-col lg:flex-row">
           <Tilt>
-            <div
-              className="relative rounded-xl"
-              style={{ transformStyle: "preserve-3d" }}
-            >
+            <div className=" rounded-xl">
               <Image
                 width={1000}
                 height={1000}
                 src={`/assets/images/projects/chat-real-time.png`}
                 alt="Image project"
-                className="min-w-[20rem] rounded-lg transition ease-in hover:scale-110 cursor-zoom-in
-
-        "
+                className="lg:min-w-[20rem] rounded-lg transition ease-in hover:scale-110 cursor-zoom-in"
               />
             </div>
           </Tilt>
@@ -35,7 +30,7 @@ export function RelevantProject() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-row gap-4 text-sm mt-4 lg:mt-0 lg:flex-col lg:text-md">
           <button className="bg-blue-800 p-2 rounded-lg transition duration-200 hover:brightness-75">
             Visit Project
           </button>
@@ -75,7 +70,7 @@ export function RelevantProject() {
         <div className="flex flex-col gap-4">
           <Link
             href="https://qrcode-profile.vercel.app/"
-            className="bg-blue-800 p-2 rounded-lg transition duration-200 hover:brightness-75"
+            className="bg-blue-800 p-2 rounded-lg transition duration-200 hover:brightness-75 text-center"
           >
             Visit Project
           </Link>

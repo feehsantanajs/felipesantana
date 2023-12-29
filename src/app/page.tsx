@@ -22,27 +22,29 @@ export default function App() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
       >
-        <Image
-          src="https://github.com/feelipesantana.png"
-          width={150}
-          height={150}
-          className="rounded-lg"
-          alt="My Image"
-        />
-        <div>
-          <h1 className="font-extrabold text-transparent text-lg  bg-clip-text text-white lg:text-2xl">
-            Felipe Santana de Jesus
-          </h1>
+        <div className="">
+          <Image
+            src="https://github.com/feelipesantana.png"
+            width={150}
+            height={100}
+            className="rounded-lg "
+            alt="My Image"
+          />
+        </div>
+        <div className="flex flex-col justify-between">
+          <div>
+            <h1 className="font-extrabold text-transparent text-lg  bg-clip-text text-white lg:text-2xl">
+              Felipe Santana de Jesus
+            </h1>
 
-          <p className="text-xs font-dancing leading-10 lg:text-base">
-            " Knowing that a life breathed easier just because you existed "
-          </p>
-
-          <p className="text-xs mt-4 lg:text-base">
-            Software Engineer | Focus everyday improving my skills
-          </p>
-
-          <div className="flex gap-2">
+            <p className="text-sm lg:text-base mt-2">
+              Software Engineer | Focus everyday improving my skills
+            </p>
+            <p className="text-sm font-itim lg:text-base text-slate-500 mt-4">
+              " Knowing that a life breathed easier just because you existed "
+            </p>
+          </div>
+          <div className="flex gap-2 flex-wrap lg:flex-nowrap">
             <RelevantStack title="ReactJS" d={0.2} x1={10} />
             <RelevantStack title="Node.js" d={0.6} x1={20} />
             <RelevantStack title="Next.js" d={1} x1={30} />
@@ -54,9 +56,9 @@ export default function App() {
       </motion.div>
 
       <About />
-      <div className="flex gap-4">
+      <div className="flex gap-4 flex-col lg:flex-row">
         <motion.div
-          className="border border-white/20 rounded-lg mt-10 p-8 w-[50%]"
+          className="border border-white/20 rounded-lg mt-10 p-8 lg:w-[50%]"
           initial={{ x: 10, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 0.5 }}
@@ -116,7 +118,7 @@ export default function App() {
         </motion.div>
 
         <motion.div
-          className="border border-white/20 rounded-lg mt-10 p-8 flex-1"
+          className="border border-white/20 rounded-lg mt-10 p-8 lg:w-[50%]"
           initial={{ x: 10, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 0.5 }}

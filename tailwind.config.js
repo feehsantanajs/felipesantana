@@ -12,8 +12,10 @@ module.exports = {
     extend: {
       fontFamily: {
         dancing: ["Dancing Script", "cursive"],
+        abalumo: ["Agbalumo"],
+        itim: ["Itim", "cursive"],
       },
-      colors: {
+      colatimors: {
         "dark-blue-900": "#000409",
         "dark-blue-800": "#001123",
         "dark-blue-700": "#001e3c",
