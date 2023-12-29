@@ -26,17 +26,17 @@ export default function Header() {
 
         <nav className="max-w-[32rem] w-full  mx-auto hidden lg:flex">
           <ul className="flex justify-between">
-            <Link href="/about">
+            <Link href="/">
               <li className="cursor-pointer text-slate-500  text-sm font-bold p-3 rounded-md transition duration-300 ease-in-out hover:text-white hover:bg-slate-900">
                 ABOUT
               </li>
             </Link>
-            <Link href="/career">
+            <Link href="/">
               <li className="cursor-pointer text-slate-500  text-sm font-bold p-3 rounded-md transition duration-300 ease-in-out hover:text-white hover:bg-slate-900">
                 CAREER
               </li>
             </Link>
-            <Link href="/projects">
+            <Link href="/">
               <li className="cursor-pointer text-slate-500  text-sm font-bold p-3 rounded-md transition duration-300 ease-in-out hover:text-white hover:bg-slate-900">
                 PROJECTS
               </li>
@@ -46,12 +46,12 @@ export default function Header() {
                 TECHS
               </li>
             </Link>
-            <Link href="/insights">
+            <Link href="/">
               <li className="cursor-pointer text-slate-500  text-sm font-bold p-3 rounded-md transition duration-300 ease-in-out hover:text-white hover:bg-slate-900">
                 INSIGHTS
               </li>
             </Link>
-            <Link href="/contact">
+            <Link href="/">
               <li className="cursor-pointer text-slate-500  text-sm font-bold p-3 rounded-md transition duration-300 ease-in-out hover:text-white hover:bg-slate-900">
                 CONTACT
               </li>

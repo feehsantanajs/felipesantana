@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaProjectDiagram } from "react-icons/fa";
 import useControlModal from "@/hook/useControlModal";
 import Image from "next/image";
 import { RelevantStack } from "@/components/RelevantStack";
@@ -11,6 +11,7 @@ import { RelevantExperience } from "@/components/RelevantExperence";
 import Link from "next/link";
 import { BsBriefcase, BsBriefcaseFill, BsInfoSquareFill } from "react-icons/bs";
 import { RelevantPost } from "@/components/RelevantPost";
+import { RelevantProject } from "@/components/RelevantProject";
 
 export default function App() {
   return (
@@ -109,7 +110,7 @@ export default function App() {
               company="K2Media"
               position="Trainee"
               image="k2media.jpeg"
-              duration="Feb 2021 - Jul 2022 • 5 mos"
+              duration="Feb 2013 - Jun 2013 • 5 mos"
             />
           </div>
         </motion.div>
@@ -134,6 +135,22 @@ export default function App() {
           </div>
         </motion.div>
       </div>
+
+      <motion.div
+        className="border border-white/20 rounded-lg mt-10 p-8 "
+        initial={{ x: 10, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ ease: "easeInOut", duration: 0.5 }}
+      >
+        <h2 className="font-extrabold text-xl text-white flex items-center gap-2 ">
+          <FaProjectDiagram />
+          My Projects
+        </h2>
+
+        <div className="mt-10 flex flex-col gap-5">
+          <RelevantProject />
+        </div>
+      </motion.div>
     </div>
   );
 }
