@@ -37,7 +37,7 @@ export default function Stacks() {
                     className="bg-gradient-to-br from-slate-600/10 to-slate-800  flex items-center gap-3 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring"
                     variants={fadeInAnimationVariants}
                     initial="initial"
-                    whileInView="animate"
+                    animate="animate"
                     viewport={{ once: true }}
                     custom={_index}
                   >
@@ -74,8 +74,7 @@ export default function Stacks() {
                   <motion.div
                     variants={fadeInAnimationVariants}
                     initial="initial"
-                    whileInView="animate"
-                    viewport={{ once: true }}
+                    animate="animate"
                     custom={_index}
                     className="bg-gradient-to-br from-slate-600/10 to-slate-800  flex items-center gap-3 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring"
                   >
@@ -112,7 +111,7 @@ export default function Stacks() {
                   <motion.div
                     variants={fadeInAnimationVariants}
                     initial="initial"
-                    whileInView="animate"
+                    animate="animate"
                     viewport={{ once: true }}
                     custom={_index}
                     className="bg-gradient-to-br from-slate-600/10 to-slate-800  flex items-center gap-3 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring"
@@ -150,7 +149,7 @@ export default function Stacks() {
                   <motion.div
                     variants={fadeInAnimationVariants}
                     initial="initial"
-                    whileInView="animate"
+                    animate="animate"
                     viewport={{ once: true }}
                     custom={_index}
                     className="bg-gradient-to-br from-slate-600/10 to-slate-800  flex items-center gap-3 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring"
@@ -187,7 +186,7 @@ export default function Stacks() {
                   <motion.div
                     variants={fadeInAnimationVariants}
                     initial="initial"
-                    whileInView="animate"
+                    animate="animate"
                     viewport={{ once: true }}
                     custom={_index}
                     className="bg-gradient-to-br from-slate-600/10 to-slate-800  flex items-center gap-3 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring"
@@ -226,7 +225,7 @@ export default function Stacks() {
                   <motion.div
                     variants={fadeInAnimationVariants}
                     initial="initial"
-                    whileInView="animate"
+                    animate="animate"
                     viewport={{ once: true }}
                     custom={_index}
                     className="bg-gradient-to-br from-slate-600/10 to-slate-800  flex items-center gap-3 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring"
@@ -265,7 +264,7 @@ export default function Stacks() {
                   <motion.div
                     variants={fadeInAnimationVariants}
                     initial="initial"
-                    whileInView="animate"
+                    animate="animate"
                     viewport={{ once: true }}
                     custom={_index}
                     className="bg-gradient-to-br from-slate-600/10 to-slate-800  flex items-center gap-3 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring"
@@ -303,7 +302,7 @@ export default function Stacks() {
                   <motion.div
                     variants={fadeInAnimationVariants}
                     initial="initial"
-                    whileInView="animate"
+                    animate="animate"
                     viewport={{ once: true }}
                     custom={_index}
                     className="bg-gradient-to-br from-slate-600/10 to-slate-800  flex items-center gap-3 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring"
@@ -341,7 +340,7 @@ export default function Stacks() {
                   <motion.div
                     variants={fadeInAnimationVariants}
                     initial="initial"
-                    whileInView="animate"
+                    animate="animate"
                     viewport={{ once: true }}
                     custom={_index}
                     className="bg-gradient-to-br from-slate-600/10 to-slate-800  flex items-center gap-3 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring"
