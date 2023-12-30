@@ -15,7 +15,7 @@ module.exports = {
         abalumo: ["Agbalumo"],
         itim: ["Itim", "cursive"],
       },
-      colatimors: {
+      colors: {
         "dark-blue-900": "#000409",
         "dark-blue-800": "#001123",
         "dark-blue-700": "#001e3c",

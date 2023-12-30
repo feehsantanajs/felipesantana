@@ -29,7 +29,7 @@ export default function RootLayout({
         <div className=" max-w-7xl mx-auto">
           <Header />
           <main
-            className={`mx-auto w-full flex justify-between py-20 max-lg:px-10 `}
+            className={`mx-auto w-full flex justify-between py-14 max-lg:px-10 `}
           >
             {children}
           </main>
