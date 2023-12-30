@@ -1,18 +1,18 @@
 import Image from "next/image";
 
-interface RelevantExperienceProps {
+interface RelevantExperiencesProps {
   company: string;
   position: string;
   duration: string;
   image?: string;
 }
 
-export function RelevantExperience({
+export function RelevantExperiences({
   company,
   position,
   duration,
   image,
-}: RelevantExperienceProps) {
+}: RelevantExperiencesProps) {
   return (
     <div className="flex gap-3 ">
       <div className="rounded-full bg-gradient-to-br from-purple-900 to-blue-900 p-1 h-10 w-10">

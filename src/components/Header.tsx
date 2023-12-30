@@ -31,12 +31,12 @@ export default function Header() {
                 ABOUT
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/career">
               <li className="cursor-pointer text-slate-500  text-sm font-bold p-3 rounded-md transition duration-300 ease-in-out hover:text-white hover:bg-slate-900">
                 CAREER
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/projects">
               <li className="cursor-pointer text-slate-500  text-sm font-bold p-3 rounded-md transition duration-300 ease-in-out hover:text-white hover:bg-slate-900">
                 PROJECTS
               </li>

@@ -7,11 +7,11 @@ import Image from "next/image";
 import { RelevantStack } from "@/components/RelevantStack";
 import { motion } from "framer-motion";
 import About from "./about/page";
-import { RelevantExperience } from "@/components/RelevantExperence";
 import Link from "next/link";
 import { BsBriefcase, BsBriefcaseFill, BsInfoSquareFill } from "react-icons/bs";
-import { RelevantPost } from "@/components/RelevantPost";
-import { RelevantProject } from "@/components/RelevantProject";
+import { RelevantPosts } from "@/components/RelevantPosts";
+import { RelevantExperiences } from "@/components/RelevantExperences";
+import Projects from "./projects/page";
 
 export default function App() {
   return (
@@ -78,37 +78,37 @@ export default function App() {
           </div>
 
           <div className="mt-10 flex flex-col gap-5">
-            <RelevantExperience
+            <RelevantExperiences
               company="Spott"
               position="Mid-Level Frontend Engineer"
               image="spott.jpeg"
               duration="Feb 2023 - Nov 2023 • 9 mos"
             />
-            <RelevantExperience
+            <RelevantExperiences
               company="Codeby"
               position="Junior Frontend Engineer"
               image="codeby.jpeg"
               duration="Jul 2022 - Feb 2023 • 8 mos"
             />
-            <RelevantExperience
+            <RelevantExperiences
               company="Octoshop"
               position="Junior Frontend Engineer"
               image="octoshop.jpeg"
               duration="Apr 2022 - Jul 2022 • 4 mos"
             />
-            <RelevantExperience
+            <RelevantExperiences
               company="Habit'Art"
               position="Full Stack Engineer"
               image="habttart.jpeg"
               duration="May 2021 - Jan 2022 • 9 mos"
             />
-            <RelevantExperience
+            <RelevantExperiences
               company="Service One"
               position="Trainee"
               image="habttart.jpeg"
               duration="Jul 2013 - Dec 2013 • 6 mos"
             />
-            <RelevantExperience
+            <RelevantExperiences
               company="K2Media"
               position="Trainee"
               image="k2media.jpeg"
@@ -129,7 +129,7 @@ export default function App() {
           </h2>
 
           <div className="mt-10">
-            <RelevantPost
+            <RelevantPosts
               image="springboot.png"
               title="I'm Focus on Studying Spring Boot"
               description="A 3 month ago I began studying Spring Boot to increase my knowledge on this tech and increase my knowledge on Java. My Focus is work with backend too."
@@ -144,13 +144,21 @@ export default function App() {
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
       >
-        <h2 className="font-extrabold text-xl text-white flex items-center gap-2 ">
-          <FaProjectDiagram />
-          My Projects
-        </h2>
+        <div className="flex justify-between items-center">
+          <h2 className="font-extrabold text-xl text-white flex items-center gap-2 ">
+            <FaProjectDiagram />
+            My Projects
+          </h2>
+          <Link
+            href="/projects"
+            className="text-sm text-blue-700 font-semibold"
+          >
+            See more
+          </Link>
+        </div>
 
         <div className="mt-10 flex flex-col gap-5">
-          <RelevantProject />
+          <Projects />
         </div>
       </motion.div>
     </div>

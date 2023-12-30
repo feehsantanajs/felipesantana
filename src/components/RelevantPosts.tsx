@@ -5,7 +5,11 @@ interface RelevantPostProps {
   description?: string;
   image: string;
 }
-export function RelevantPost({ image, title, description }: RelevantPostProps) {
+export function RelevantPosts({
+  image,
+  title,
+  description,
+}: RelevantPostProps) {
   return (
     <div className="flex items-center gap-4">
       <Image
