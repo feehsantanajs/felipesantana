@@ -1,4 +1,5 @@
-import { randomUUID } from "crypto";
+import { v4 } from "uuid";
+
 interface stackProps{
   id: string;
   name: string;
@@ -9,7 +10,7 @@ interface stackProps{
 }
 export const stacksData:stackProps[] = [
   {
-    id: randomUUID(),
+    id: v4(),
     name: "HTML",
     type: "frontend",
     url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
@@ -17,7 +18,7 @@ export const stacksData:stackProps[] = [
     description: `HTML is the standard markup language for creating Web pages.`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "CSS",
     type: "frontend",
     url: "",
@@ -25,7 +26,7 @@ export const stacksData:stackProps[] = [
     description: `CSS is the language we use to style an HTML document.`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "JavaScript",
     type: "frontend",
     url: "",
@@ -33,7 +34,7 @@ export const stacksData:stackProps[] = [
     description: `JavaScript is the programming language of the Web.`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "TypeScript",
     type: "frontend",
     url: "",
@@ -41,7 +42,7 @@ export const stacksData:stackProps[] = [
     description: `TypeScript is JavaScript with added syntax for types.`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "ReactJS",
     type: "frontend",
     url: "",
@@ -49,7 +50,7 @@ export const stacksData:stackProps[] = [
     description: `React is a framework used to build single-page applications.`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Next.js",
     type: "frontend",
     url: "",
@@ -57,7 +58,7 @@ export const stacksData:stackProps[] = [
     description: `React is a framework used to build single-page applications.`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "TailwindCSS",
     type: "frontend",
     url: "",
@@ -65,21 +66,21 @@ export const stacksData:stackProps[] = [
     description: `Tailwind CSS is a utility-first CSS framework that provides a set of pre-defined CSS classes to quickly and efficiently style HTML elements.`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "SASS",
     type: "frontend",
     url: "",
     img: "sass.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Styled-Components",
     type: "frontend",
     url: "framer-motion.svg",
     img: "styled-components.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Vite.js",
     type: "frontend",
     url: "framer-motion.svg",
@@ -87,7 +88,7 @@ export const stacksData:stackProps[] = [
     description: `JavaScript is the programming language of the Web.`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "React Query",
     type: "frontend",
     url: "framer-motion.svg",
@@ -95,14 +96,14 @@ export const stacksData:stackProps[] = [
     description: `JavaScript is the programming language of the Web.`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "React Router Dom",
     type: "frontend",
     url: "",
     img: "react-router-dom.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Zustand",
     type: "frontend",
     url: "framer-motion.svg",
@@ -110,7 +111,7 @@ export const stacksData:stackProps[] = [
     description: `JavaScript is the programming language of the Web.`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Framer Motion",
     type: "frontend",
     url: "framer-motion.svg",
@@ -118,7 +119,7 @@ export const stacksData:stackProps[] = [
     description: `JavaScript is the programming language of the Web.`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Redux",
     type: "frontend",
     url: "framer-motion.svg",
@@ -126,42 +127,42 @@ export const stacksData:stackProps[] = [
     description: `JavaScript is the programming language of the Web.`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Stitches",
     type: "frontend",
     url: "framer-motion.svg",
     img: "stitches.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Radix",
     type: "frontend",
     url: "framer-motion.svg",
     img: "radix.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Chakra UI",
     type: "frontend",
     url: "",
     img: "chakra-ui.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "MUI",
     type: "frontend",
     url: "",
     img: "material-ui.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Zod",
     type: "frontend",
     url: "",
     img: "zod.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "GraphQL",
     type: "frontend",
   
@@ -170,7 +171,7 @@ export const stacksData:stackProps[] = [
     description: `It is a query language and runtime for APIs`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "tRPC",
     type: "frontend",
     url: "",
@@ -178,14 +179,14 @@ export const stacksData:stackProps[] = [
   },
  
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Node.js",
     type: "backend",
     url: "",
     img: "node-js.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "JavaScript",
     type: "backend",
     url: "",
@@ -193,63 +194,63 @@ export const stacksData:stackProps[] = [
     description: `JavaScript is the programming language of the Web.`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Bun",
     type: "backend",
     url: "",
     img: "bun.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "TypeScript",
     type: "backend",
     url: "",
     img: "typescript.svg",
   }, 
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Prima",
     type: "backend",
     url: "",
     img: "prisma.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Zod",
     type: "backend",
     url: "",
     img: "zod.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Express",
     type: "backend",
     url: "",
     img: "express.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Fastify",
     type: "backend",
     url: "",
     img: "fastify.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "AppWrite",
     type: "backend",
     url: "",
     img: "appwrite-io.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Spring Boot",
     type: "backend",
     url: "",
     img: "spring-boot.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Java",
     type: "backend",
     url: "",
@@ -257,7 +258,7 @@ export const stacksData:stackProps[] = [
   },
 
   {
-    id: randomUUID(),
+    id: v4(),
     name: "PHP",
     type: "backend",
     url: "",
@@ -267,7 +268,7 @@ export const stacksData:stackProps[] = [
 
  
   {
-    id: randomUUID(),
+    id: v4(),
     name: "PostgreSQL",
     type: "database",
     url: "",
@@ -275,7 +276,7 @@ export const stacksData:stackProps[] = [
     description: `SQL Server is a relational database management system (RDBMS) developed by Microsoft. It is used to store and retrieve data as requested by other software applications. `,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "MySQL",
     type: "database",
     url: "png",
@@ -283,7 +284,7 @@ export const stacksData:stackProps[] = [
     description: `MySQL is an open-source relational database management system (RDBMS) that allows for the creation, management, and manipulation of databases.`,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "SQLServer",
     type: "database",
     url: "",
@@ -291,7 +292,7 @@ export const stacksData:stackProps[] = [
     description: `SQL Server is a relational database management system (RDBMS) developed by Microsoft. It is used to store and retrieve data as requested by other software applications. `,
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "MongoDB",
     type: "database",
     url: "",
@@ -300,14 +301,14 @@ export const stacksData:stackProps[] = [
   },
 
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Jest",
     type: "testing",
     url: "",
     img: "jest.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Vitest",
     type: "testing",
     url: "",
@@ -316,7 +317,7 @@ export const stacksData:stackProps[] = [
 
 
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Github",
     type: "version-control",
     url: "",
@@ -324,63 +325,63 @@ export const stacksData:stackProps[] = [
   },
 
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Git",
     type: "version-control",
     url: "",
     img: "git.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "BitBucket",
     type: "version-control",
     url: "",
     img: "bitbucket.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Postman",
     type: "apps",
     url: "",
     img: "postman.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Insomnia",
     type: "apps",
     url: "",
     img: "insomnia.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Slack",
     type: "apps",
     url: "",
     img: "slack.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Trello",
     type: "apps",
     url: "",
     img: "trello.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Jira",
     type: "apps",
     url: "",
     img: "jira.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "ClickUp",
     type: "apps",
     url: "",
     img: "clickup.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Monday",
     type: "apps",
     url: "",
@@ -388,14 +389,14 @@ export const stacksData:stackProps[] = [
   },
 
   {
-    id: randomUUID(),
+    id: v4(),
     name: "AWS",
     type: "infrastructure",
     url: "",
     img: "aws.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Vercel",
     type: "infrastructure",
     url: "",
@@ -403,7 +404,7 @@ export const stacksData:stackProps[] = [
   },
  
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Docker",
     type: "infrastructure",
     url: "",
@@ -411,14 +412,14 @@ export const stacksData:stackProps[] = [
   },
  
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Vtex",
     type: "platform",
     url: "",
     img: "vtex.svg",
   },
   {
-    id: randomUUID(),
+    id: v4(),
     name: "Shopify",
     type: "platform",
     url: "",
@@ -427,7 +428,7 @@ export const stacksData:stackProps[] = [
 
 
   {
-    id: randomUUID(),
+    id: v4(),
     name: "SAP",
     type: "erp",
     url: "",
