@@ -66,6 +66,20 @@ export const stacksData:stackProps[] = [
   },
   {
     id: randomUUID(),
+    name: "SASS",
+    type: "frontend",
+    url: "",
+    img: "sass.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "Styled-Components",
+    type: "frontend",
+    url: "framer-motion.svg",
+    img: "styled-components.svg",
+  },
+  {
+    id: randomUUID(),
     name: "Vite.js",
     type: "frontend",
     url: "framer-motion.svg",
@@ -79,6 +93,13 @@ export const stacksData:stackProps[] = [
     url: "framer-motion.svg",
     img: "react-query.svg",
     description: `JavaScript is the programming language of the Web.`,
+  },
+  {
+    id: randomUUID(),
+    name: "React Router Dom",
+    type: "frontend",
+    url: "",
+    img: "react-router-dom.svg",
   },
   {
     id: randomUUID(),
@@ -120,12 +141,40 @@ export const stacksData:stackProps[] = [
   },
   {
     id: randomUUID(),
+    name: "Chakra UI",
+    type: "frontend",
+    url: "",
+    img: "chakra-ui.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "MUI",
+    type: "frontend",
+    url: "",
+    img: "material-ui.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "Zod",
+    type: "frontend",
+    url: "",
+    img: "zod.svg",
+  },
+  {
+    id: randomUUID(),
     name: "GraphQL",
     type: "frontend",
   
     url: "",
     img: "graphql.svg",
     description: `It is a query language and runtime for APIs`,
+  },
+  {
+    id: randomUUID(),
+    name: "tRPC",
+    type: "frontend",
+    url: "",
+    img: "trpc.svg",
   },
  
   {
@@ -160,9 +209,37 @@ export const stacksData:stackProps[] = [
   {
     id: randomUUID(),
     name: "Prima",
-    type: "",
+    type: "backend",
     url: "",
     img: "prisma.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "Zod",
+    type: "backend",
+    url: "",
+    img: "zod.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "Express",
+    type: "backend",
+    url: "",
+    img: "express.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "Fastify",
+    type: "backend",
+    url: "",
+    img: "fastify.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "AppWrite",
+    type: "backend",
+    url: "",
+    img: "appwrite-io.svg",
   },
   {
     id: randomUUID(),
@@ -178,6 +255,7 @@ export const stacksData:stackProps[] = [
     url: "",
     img: "java.svg",
   },
+
   {
     id: randomUUID(),
     name: "PHP",
@@ -186,25 +264,15 @@ export const stacksData:stackProps[] = [
     img: "php.svg",
     description: `PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.`,
   },
+
  
-  
-
   {
     id: randomUUID(),
-    name: "VTEX",
-    type: "framework",
+    name: "PostgreSQL",
+    type: "database",
     url: "",
-    img: "vtex.svg",
-    description: `VTEX is a cloud-based e-commerce platform that provides a suite of tools and services to help businesses build and manage their online stores.`,
-  },
-
-  {
-    id: randomUUID(),
-    name: "SAP",
-    type: "erp",
-    url: "",
-    img: "sap.svg",
-    description: `SAP (Systems, Applications, and Products) is a multinational software corporation that provides enterprise software to manage business operations and customer relations.`,
+    img: "postgresql.svg",
+    description: `SQL Server is a relational database management system (RDBMS) developed by Microsoft. It is used to store and retrieve data as requested by other software applications. `,
   },
   {
     id: randomUUID(),
@@ -230,14 +298,6 @@ export const stacksData:stackProps[] = [
     img: "mongo-db.svg",
     description: `MongoDB is a popular open-source NoSQL document-oriented database that uses a flexible JSON-like data model. `,
   },
-  {
-    id: randomUUID(),
-    name: "PostgreSQL",
-    type: "erp",
-    url: "",
-    img: "postgresql.svg",
-    description: `PostgreSQL is an advanced open-source relational database management system (RDBMS) that uses and extends the SQL language. It is known for its robustness, extensibility, and compliance with industry standards.`,
-  },
 
   {
     id: randomUUID(),
@@ -253,5 +313,128 @@ export const stacksData:stackProps[] = [
     url: "",
     img: "vitest.svg",
   },
+
+
+  {
+    id: randomUUID(),
+    name: "Github",
+    type: "version-control",
+    url: "",
+    img: "github.svg",
+  },
+
+  {
+    id: randomUUID(),
+    name: "Git",
+    type: "version-control",
+    url: "",
+    img: "git.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "BitBucket",
+    type: "version-control",
+    url: "",
+    img: "bitbucket.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "Postman",
+    type: "apps",
+    url: "",
+    img: "postman.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "Insomnia",
+    type: "apps",
+    url: "",
+    img: "insomnia.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "Slack",
+    type: "apps",
+    url: "",
+    img: "slack.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "Trello",
+    type: "apps",
+    url: "",
+    img: "trello.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "Jira",
+    type: "apps",
+    url: "",
+    img: "jira.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "ClickUp",
+    type: "apps",
+    url: "",
+    img: "clickup.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "Monday",
+    type: "apps",
+    url: "",
+    img: "monday.svg",
+  },
+
+  {
+    id: randomUUID(),
+    name: "AWS",
+    type: "infrastructure",
+    url: "",
+    img: "aws.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "Vercel",
+    type: "infrastructure",
+    url: "",
+    img: "vercel.svg",
+  },
+ 
+  {
+    id: randomUUID(),
+    name: "Docker",
+    type: "infrastructure",
+    url: "",
+    img: "docker.svg",
+  },
+ 
+  {
+    id: randomUUID(),
+    name: "Vtex",
+    type: "platform",
+    url: "",
+    img: "vtex.svg",
+  },
+  {
+    id: randomUUID(),
+    name: "Shopify",
+    type: "platform",
+    url: "",
+    img: "shopify.svg",
+  },
+
+
+  {
+    id: randomUUID(),
+    name: "SAP",
+    type: "erp",
+    url: "",
+    img: "sap.svg",
+    description: `SAP (Systems, Applications, and Products) is a multinational software corporation that provides enterprise software to manage business operations and customer relations.`,
+  },
+
+  
 
 ];
