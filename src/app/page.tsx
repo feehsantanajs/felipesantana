@@ -12,8 +12,14 @@ import { BsBriefcase, BsBriefcaseFill, BsInfoSquareFill } from "react-icons/bs";
 import { RelevantPosts } from "@/components/RelevantPosts";
 import { RelevantExperiences } from "@/components/RelevantExperences";
 import Projects from "./projects/page";
-
+import useDownloader from "react-use-downloader";
 export default function App() {
+  const { percentage, download, cancel, error, isInProgress } = useDownloader();
+
+  const fileUrlEN = "/files/cv-en.pdf";
+  const fileUrlPT = "/files/cv-pt.pdf";
+  const filenameEN = "Felipe Santana - Resume - 2024.pdf";
+  const filenamePT = "Felipe Santana - Resume - 2024.pdf";
   return (
     <div className="w-full flex flex-col lg:justify-center ">
       <motion.div
@@ -114,6 +120,20 @@ export default function App() {
               image="k2media.jpeg"
               duration="Feb 2013 - Jun 2013 • 5 mos"
             />
+          </div>
+          <div className="mt-16 flex justify-between gap-4 ">
+            <button
+              onClick={() => download(fileUrlEN, filenameEN)}
+              className="bg-blue-700 px-4 py-2 rounded-lg"
+            >
+              Download CV in English
+            </button>
+            <button
+              onClick={() => download(fileUrlPT, filenamePT)}
+              className="bg-blue-700 px-4 py-2 rounded-lg"
+            >
+              Baixar CV em Português
+            </button>
           </div>
         </motion.div>
 
