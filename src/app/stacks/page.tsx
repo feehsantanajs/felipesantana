@@ -177,6 +177,7 @@ export default function Stacks() {
             }
           })}
         </li>
+
         <h1 className="font-bold  text-2xl text-white mt-10">Apps</h1>
         <li className="grid grid-cols-2 gap-5 mt-2 lg:grid-cols-4">
           {stacksData.map((res, _index) => {
@@ -188,6 +189,43 @@ export default function Stacks() {
                     initial="initial"
                     animate="animate"
                     viewport={{ once: true }}
+                    custom={_index}
+                    className="bg-gradient-to-br from-slate-600/10 to-slate-800  flex items-center gap-3 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring"
+                  >
+                    <div className="w-10 h-10 p-2 flex items-center justify-center rounded-lg relative overflow-hidden ">
+                      <Image
+                        alt=""
+                        width={100}
+                        height={100}
+                        src={`/assets/images/stacks/${res.img}`}
+                        className="blur inset-0 opacity-90 absolute w-full z-0"
+                      />
+                      <Image
+                        alt=""
+                        width={100}
+                        height={100}
+                        src={`/assets/images/stacks/${res.img}`}
+                        className="inset-1 blur-0 opacity-100 z-1"
+                      />
+                    </div>
+                    <span className="text-xs md:text-sm">{res.name}</span>
+                  </motion.div>
+                </Link>
+              );
+            }
+          })}
+        </li>
+
+        <h1 className="font-bold  text-2xl text-white mt-10">Desktop</h1>
+        <li className="grid grid-cols-2 gap-5 mt-2 lg:grid-cols-4">
+          {stacksData.map((res, _index) => {
+            if (res.type === "desk") {
+              return (
+                <Link key={res.id} href={res.url}>
+                  <motion.div
+                    variants={fadeInAnimationVariants}
+                    initial="initial"
+                    animate="animate"
                     custom={_index}
                     className="bg-gradient-to-br from-slate-600/10 to-slate-800  flex items-center gap-3 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring"
                   >

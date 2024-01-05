@@ -7,7 +7,6 @@ interface HeaderLinkProps {
 
 export function HeaderLink({ path, name }: HeaderLinkProps) {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <Link href={path}>
       <li

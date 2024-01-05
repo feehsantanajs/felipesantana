@@ -124,13 +124,13 @@ export default function App() {
           <div className="mt-16 flex justify-between gap-4 ">
             <button
               onClick={() => download(fileUrlEN, filenameEN)}
-              className="bg-blue-700 px-4 py-2 rounded-lg"
+              className="bg-blue-700 px-4 py-2 rounded-lg transition ease-in duration-200 hover:brightness-75"
             >
               Download CV in English
             </button>
             <button
               onClick={() => download(fileUrlPT, filenamePT)}
-              className="bg-blue-700 px-4 py-2 rounded-lg"
+              className="bg-blue-700 px-4 py-2 rounded-lg transition ease-in duration-200 hover:brightness-75"
             >
               Baixar CV em Português
             </button>
@@ -148,8 +148,15 @@ export default function App() {
             Latest Posts
           </h2>
 
-          <div className="mt-10">
+          <div className="mt-10 flex flex-col gap-12">
             <RelevantPosts
+              date="05/01/2024"
+              image="python.svg"
+              title="2024 - Year of change"
+              description={`This year besides to continue improve my knowledge on the new techs about javascript, how Deno, Next.js 14 and etc, I also began to look more to AI and machine learning. Then I started my studies with python.`}
+            />
+            <RelevantPosts
+              date="20/10/2023"
               image="springboot.png"
               title="I'm Focus on Studying Spring Boot"
               description="A 3 month ago I began studying Spring Boot to increase my knowledge on this tech and increase my knowledge on Java. My Focus is work with backend too."

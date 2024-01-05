@@ -4,8 +4,10 @@ interface RelevantPostProps {
   title: string;
   description?: string;
   image: string;
+  date: string;
 }
 export function RelevantPosts({
+  date,
   image,
   title,
   description,
@@ -19,7 +21,10 @@ export function RelevantPosts({
         alt="Image about Post"
       />
       <div>
-        <h1 className="font-bold">{title}</h1>
+        <div className="flex items-center justify-between">
+          <h1 className="font-bold">{title}</h1>
+          <span>{date}</span>
+        </div>
         <p className="mt-2">{description}</p>
       </div>
     </div>

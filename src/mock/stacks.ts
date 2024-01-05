@@ -390,6 +390,13 @@ export const stacksData:stackProps[] = [
 
   {
     id: v4(),
+    name: "Python",
+    type: "desk",
+    url: "",
+    img: "python.svg",
+  },
+  {
+    id: v4(),
     name: "AWS",
     type: "infrastructure",
     url: "",
