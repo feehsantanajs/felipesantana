@@ -11,6 +11,14 @@ interface DataProjectProps{
 export const dataProjects:DataProjectProps[] = [
   {
     id: v4(),
+    name: "Shushi Express",  
+    image: "sushi-express.png",
+    url: "",
+    source_code: "https://github.com/feelipesantana/sushi.express",
+    description: `This project on backend I worked with Bun, ElysiaJS, Drizzle ORM, Zod, Resend and React Email. Frontend with React, Vite, Tailwind, Recharts, Framer Motion, Shadcn  `,
+  },
+  {
+    id: v4(),
     name: "Chat real time(App Write)",
     image: "chat-real-time.png",
     url: "",

@@ -128,6 +128,13 @@ export const stacksData:stackProps[] = [
   },
   {
     id: v4(),
+    name: "Shadcn UI",
+    type: "frontend",
+    url: "",
+    img: "shadcnui.svg",
+  },
+  {
+    id: v4(),
     name: "Stitches",
     type: "frontend",
     url: "framer-motion.svg",
@@ -216,6 +223,13 @@ export const stacksData:stackProps[] = [
   },
   {
     id: v4(),
+    name: "Drizzle ORM",
+    type: "backend",
+    url: "",
+    img: "drizzle-orm.svg",
+  },
+  {
+    id: v4(),
     name: "Zod",
     type: "backend",
     url: "",
@@ -234,6 +248,20 @@ export const stacksData:stackProps[] = [
     type: "backend",
     url: "",
     img: "fastify.svg",
+  },
+  {
+    id: v4(),
+    name: "ElysiaJS",
+    type: "backend",
+    url: "",
+    img: "elysia.svg",
+  },
+  {
+    id: v4(),
+    name: "Resend",
+    type: "backend",
+    url: "",
+    img: "resend.jpg",
   },
   {
     id: v4(),
@@ -265,8 +293,6 @@ export const stacksData:stackProps[] = [
     img: "php.svg",
     description: `PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.`,
   },
-
- 
   {
     id: v4(),
     name: "PostgreSQL",
