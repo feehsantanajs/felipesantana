@@ -7,6 +7,7 @@ import useControlModal from "@/hook/useControlModal";
 
 import "./globals.css";
 import { usePathname } from "next/navigation";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 export default function RootLayout({
   children,
 }: {
@@ -14,6 +15,8 @@ export default function RootLayout({
 }) {
   const setModal = useControlModal((state) => state.setValueModal);
   const pathname = usePathname();
+  const client = new QueryClient()
+
   useEffect(() => {
     window.addEventListener("keydown", (e) => {
       if (e.keyCode === 77) {
@@ -31,7 +34,9 @@ export default function RootLayout({
           <main
             className={`mx-auto w-full flex justify-between py-14 max-lg:px-10 `}
           >
-            {children}
+            <QueryClientProvider client={client}>
+              {children}
+            </QueryClientProvider>
           </main>
           <Footer />
           <Modal />
