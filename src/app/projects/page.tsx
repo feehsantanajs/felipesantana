@@ -5,8 +5,19 @@ import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
 import Tilt from "react-parallax-tilt";
 import { usePathname } from "next/navigation";
+import { api } from "@/services/api";
+import { useQuery } from "@tanstack/react-query";
+import { getGithubRepos } from "@/api/get-github-repos";
 export default function Projects() {
   const pathname = usePathname();
+
+  const { data } = useQuery({
+    queryKey: ['api-github'],
+    queryFn: getGithubRepos
+  })
+
+  console.log("TEste", data)
+
   return (
     <div className="flex flex-col gap-20 w-full mx-auto">
       {dataProjects.slice(0, pathname === "/" ? 3 : 10).map((res, _index) => {

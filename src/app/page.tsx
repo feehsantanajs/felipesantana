@@ -85,6 +85,12 @@ export default function App() {
 
           <div className="mt-10 flex flex-col gap-5">
             <RelevantExperiences
+              company="Novadata"
+              position="Mid-Level Full Stack Engineer"
+              image="novadata.jpeg"
+              duration="Contract - Jan 2024 - May 2024 • 4 mos"
+            />
+            <RelevantExperiences
               company="Spott"
               position="Mid-Level Frontend Engineer"
               image="spott.jpeg"
@@ -120,6 +126,7 @@ export default function App() {
               image="k2media.jpeg"
               duration="Feb 2013 - Jun 2013 • 5 mos"
             />
+
           </div>
           <div className="mt-16 flex justify-between gap-4 ">
             <button
@@ -150,6 +157,14 @@ export default function App() {
 
           <div className="mt-10 flex flex-col gap-12">
             <RelevantPosts
+              date="01/02/2024"
+              image="cob.jpeg"
+              title="Brazilian Olympic Committee "
+              description={`This begin of year I got started to work at Brazilian Olympic Committee project.
+               I'm so happy  for the opportunity of get a great project. On this project I'm working how Full stack, but the great focus is on Frontend. 
+               Besides working with React, Next, Tailwind, GraphQL and Node, I'm getting experience with Strapi CMS.`}
+            />
+            <RelevantPosts
               date="05/01/2024"
               image="python.svg"
               title="2024 - Year of change"
@@ -161,6 +176,7 @@ export default function App() {
               title="I'm Focus on Studying Spring Boot"
               description="A 3 month ago I began studying Spring Boot to increase my knowledge on this tech and increase my knowledge on Java. My Focus is work with backend too."
             />
+
           </div>
         </motion.div>
       </div>
